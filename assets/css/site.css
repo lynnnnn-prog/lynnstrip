@@ -14,9 +14,11 @@
   --ink: #1a1a1a;
   --muted: #667085;
   --line: #e8e8e8;
-  --sea: #0f6b5c;
-  --sea-deep: #0a4a3f;
-  --coral: #e85d4c;
+  --sea: #4ba3c7;
+  --sea-deep: #2f7fa3;
+  --coral: #3a8fb8;
+  --sky: #9fcde4;
+  --sky-soft: rgba(159, 205, 228, 0.22);
   --gold: #c9a227;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   --radius: 16px;
@@ -177,7 +179,7 @@ button {
 .nav__link:hover,
 .nav__link.is-active {
   color: var(--sea-deep);
-  background: rgba(15, 107, 92, 0.08);
+  background: var(--sky-soft);
 }
 
 .nav-toggle {
@@ -301,8 +303,8 @@ button {
 
 .hero-with-photo {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 40px;
   align-items: center;
   margin-bottom: 56px;
 }
@@ -526,7 +528,7 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--sea);
-  background: rgba(15, 107, 92, 0.1);
+  background: var(--sky-soft);
   padding: 4px 10px;
   border-radius: 999px;
   margin-bottom: 14px;
@@ -593,15 +595,13 @@ button {
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
-  aspect-ratio: 3 / 4;
   box-shadow: var(--shadow);
 }
 
 .about-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  display: block;
 }
 
 .travel-cover {
@@ -649,21 +649,16 @@ button {
   color: var(--muted);
 }
 
-.hero-with-photo {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 28px;
-  align-items: center;
-  margin-bottom: 56px;
-}
-
 .hero-photo {
-  border-radius: 20px;
+  width: 280px;
+  max-width: 36vw;
+  border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 3 / 4;
-  background: #fff;
+  background: #f3f3f3;
   box-shadow: var(--shadow);
   animation: fadeUp 0.7s var(--ease) 0.1s both;
+  justify-self: end;
 }
 
 .hero-photo img {
@@ -744,6 +739,12 @@ button {
   .about-layout,
   .hero-with-photo {
     grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    width: min(240px, 70%);
+    max-width: none;
+    justify-self: start;
   }
 
   .travel-cover {
