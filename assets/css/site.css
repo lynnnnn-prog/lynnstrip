@@ -383,6 +383,21 @@ button {
   color: var(--sea-deep);
 }
 
+.btn--disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+}
+
+.project-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
 /* Portal grid */
 .portal-grid {
   display: grid;
@@ -654,7 +669,8 @@ button {
 .hero-photo {
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
+  background: #fff;
   box-shadow: var(--shadow);
   animation: fadeUp 0.7s var(--ease) 0.1s both;
 }
@@ -663,6 +679,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .list-link {
