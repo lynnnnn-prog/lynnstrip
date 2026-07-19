@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 | Lynn</title>
+  <meta name="description" content="Lynn 的线上项目与 SaaS 入口。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark">Lynn</span>
+          <span class="brand__tag">lynnstrip.com</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
+        <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+          <a class="nav__link" href="/">首页</a>
+          <a class="nav__link" href="/about/">关于</a>
+          <a class="nav__link is-active" href="/projects/">项目</a>
+          <a class="nav__link" href="/code/">代码</a>
+          <a class="nav__link" href="/travel/">旅行</a>
+          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link" href="/contact/">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <p class="eyebrow">Projects</p>
+      <h1 class="page-title">项目</h1>
+      <p class="page-lead">线上 SaaS 与产品入口。每个项目后续可放一句话介绍、状态和外链。</p>
+
+      <div class="stack">
+        <article class="block">
+          <div class="block__meta">Placeholder · SaaS</div>
+          <h2 class="block__title">项目名称待定</h2>
+          <p class="block__text">一句话说明这个产品解决什么问题。链接、截图、状态标签稍后补上。</p>
+        </article>
+        <article class="block">
+          <div class="block__meta">Placeholder · Side Project</div>
+          <h2 class="block__title">另一个项目</h2>
+          <p class="block__text">可继续追加卡片。骨架阶段先保留结构，方便你之后逐个填入。</p>
+        </article>
+      </div>
+
+      <div class="placeholder" style="margin-top: 24px;">
+        <strong>待补充</strong><br>
+        · 项目名称 / 一句话介绍 / 链接<br>
+        · 上线状态（进行中 / 已上线）
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span data-year></span> Lynn · lynnstrip.com</p>
+        <p><a href="/code/">代码</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>

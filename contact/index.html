@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系 | Lynn</title>
+  <meta name="description" content="联系 Lynn。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark">Lynn</span>
+          <span class="brand__tag">lynnstrip.com</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
+        <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+          <a class="nav__link" href="/">首页</a>
+          <a class="nav__link" href="/about/">关于</a>
+          <a class="nav__link" href="/projects/">项目</a>
+          <a class="nav__link" href="/code/">代码</a>
+          <a class="nav__link" href="/travel/">旅行</a>
+          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link is-active" href="/contact/">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-title">联系</h1>
+      <p class="page-lead">邮箱与社交账号预留位。确认后我再改成真实链接。</p>
+
+      <div class="stack">
+        <div class="block">
+          <div class="block__meta">Email</div>
+          <h2 class="block__title">your@email.com</h2>
+          <p class="block__text">占位邮箱，替换成你希望公开的联系方式。</p>
+        </div>
+        <div class="block">
+          <div class="block__meta">Social</div>
+          <h2 class="block__title">GitHub / 其他社交</h2>
+          <p class="block__text">可放 GitHub、小红书、Instagram 等你想公开的账号。</p>
+        </div>
+      </div>
+
+      <div class="placeholder" style="margin-top: 24px;">
+        <strong>待补充</strong><br>
+        · 公开邮箱<br>
+        · 社交账号链接
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span data-year></span> Lynn · lynnstrip.com</p>
+        <p><a href="/">回到首页</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>

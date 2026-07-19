@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅行 | Lynn</title>
+  <meta name="description" content="Lynn 的旅行分享与攻略。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark">Lynn</span>
+          <span class="brand__tag">lynnstrip.com</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
+        <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+          <a class="nav__link" href="/">首页</a>
+          <a class="nav__link" href="/about/">关于</a>
+          <a class="nav__link" href="/projects/">项目</a>
+          <a class="nav__link" href="/code/">代码</a>
+          <a class="nav__link is-active" href="/travel/">旅行</a>
+          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link" href="/contact/">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <p class="eyebrow">Travel</p>
+      <h1 class="page-title">旅行</h1>
+      <p class="page-lead">旅行分享与攻略列表。原先整站的马来西亚内容，现在是这里的一篇。</p>
+
+      <div class="stack">
+        <a class="list-link" href="/travel/malaysia/">
+          <span class="list-link__title">马来之旅 · 8 天 3 城攻略</span>
+          <span class="list-link__meta">吉隆坡 × 仙本那 × 亚庇</span>
+        </a>
+        <div class="list-link" aria-disabled="true" style="opacity: 0.55; cursor: default;">
+          <span class="list-link__title">下一篇旅行（占位）</span>
+          <span class="list-link__meta">Coming soon</span>
+        </div>
+      </div>
+
+      <div class="placeholder" style="margin-top: 28px;">
+        <strong>待补充</strong><br>
+        · 更多目的地攻略<br>
+        · 每篇的封面图与摘要
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span data-year></span> Lynn · lynnstrip.com</p>
+        <p><a href="/photography/">摄影</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 | Lynn</title>
+  <meta name="description" content="关于 Lynn：个人介绍与正在做的事。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark">Lynn</span>
+          <span class="brand__tag">lynnstrip.com</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
+        <nav class="nav" id="site-nav" data-nav aria-label="主导航">
+          <a class="nav__link" href="/">首页</a>
+          <a class="nav__link is-active" href="/about/">关于</a>
+          <a class="nav__link" href="/projects/">项目</a>
+          <a class="nav__link" href="/code/">代码</a>
+          <a class="nav__link" href="/travel/">旅行</a>
+          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link" href="/contact/">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <p class="eyebrow">About</p>
+      <h1 class="page-title">关于我</h1>
+      <p class="page-lead">这里放个人介绍。骨架阶段先留占位，后续补上你的故事、兴趣与近况。</p>
+
+      <div class="prose">
+        <p class="muted">占位文案：我是 Lynn。我做线上产品，也写代码；闲下来会去旅行、拍照片，并把路上踩过的坑整理成攻略。</p>
+        <p class="muted">你可以在这里补充：职业背景、擅长方向、正在关注的主题，以及想让访客最先了解的几件事。</p>
+      </div>
+
+      <div class="placeholder" style="margin-top: 28px;">
+        <strong>待补充</strong><br>
+        · 一句话自我介绍<br>
+        · 更完整的 About 正文<br>
+        · 可选：头像 / 生活照
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>© <span data-year></span> Lynn · lynnstrip.com</p>
+        <p><a href="/contact/">联系我</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+</body>
+</html>
