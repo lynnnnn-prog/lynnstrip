@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lynn | 个人主页</title>
-  <meta name="description" content="Lynn 的个人主页：项目、代码、旅行与摄影。">
+  <meta name="description" content="Lynn 的个人主页：项目、代码、旅行与博客记录。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -25,26 +25,31 @@
           <a class="nav__link" href="/projects/">项目</a>
           <a class="nav__link" href="/code/">代码</a>
           <a class="nav__link" href="/travel/">旅行</a>
-          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link" href="/blog/">博客</a>
           <a class="nav__link" href="/contact/">联系</a>
         </nav>
       </div>
     </header>
 
     <main class="site-main">
-      <section class="hero">
-        <p class="eyebrow">Personal Site</p>
-        <h1 class="hero__title">你好，我是 <span>Lynn</span></h1>
-        <p class="hero__text">这里是我的个人主页：做产品、写代码、去旅行、拍照片。马来西亚攻略只是其中一站，更多内容会慢慢补上。</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="/about/">了解我</a>
-          <a class="btn btn--ghost" href="/projects/">看项目</a>
+      <section class="hero-with-photo">
+        <div class="hero">
+          <p class="eyebrow">Personal Site</p>
+          <h1 class="hero__title">你好，我是 <span>Lynn</span></h1>
+          <p class="hero__text">这里是我的个人主页：做产品、写代码、去旅行、随手记录。照片会穿插在各处，博客留给日常感想和 vlog。</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="/about/">了解我</a>
+            <a class="btn btn--ghost" href="/blog/">看博客</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="/images/IMG_5208.JPG" alt="Lynn 旅行照片" width="1022" height="1200">
         </div>
       </section>
 
       <section aria-labelledby="portals-title">
         <h2 class="section-title" id="portals-title">从这里开始</h2>
-        <p class="section-desc">整站骨架已搭好，以下入口后续会填入真实内容。</p>
+        <p class="section-desc">个人主页骨架：项目、代码、旅行与记录入口。</p>
         <div class="portal-grid">
           <a class="portal-card" href="/about/">
             <div class="portal-card__kicker">About</div>
@@ -70,10 +75,10 @@
             <p class="portal-card__text">旅行分享与攻略；马来西亚已迁入此栏目。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
-          <a class="portal-card" href="/photography/">
-            <div class="portal-card__kicker">Photography</div>
-            <h3 class="portal-card__title">摄影</h3>
-            <p class="portal-card__text">照片作品集骨架，后续可持续补充。</p>
+          <a class="portal-card" href="/blog/">
+            <div class="portal-card__kicker">Blog</div>
+            <h3 class="portal-card__title">博客</h3>
+            <p class="portal-card__text">日常感想、随笔与 vlog 记录。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
           <a class="portal-card" href="/contact/">

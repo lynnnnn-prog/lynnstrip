@@ -234,6 +234,10 @@ button {
   animation: fadeUp 0.6s var(--ease) both;
 }
 
+.hero-with-photo .hero {
+  margin-bottom: 0;
+}
+
 .hero__title {
   font-family: var(--font-serif);
   font-size: clamp(40px, 7vw, 64px);
@@ -424,6 +428,125 @@ button {
   object-fit: cover;
 }
 
+.photo-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 14px;
+  margin: 28px 0 8px;
+}
+
+.photo-row figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--line);
+  aspect-ratio: 4 / 5;
+}
+
+.photo-row figure:first-child {
+  aspect-ratio: 5 / 4;
+}
+
+.photo-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-row figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.about-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--line);
+  aspect-ratio: 4 / 5;
+  box-shadow: var(--shadow);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-cover {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.travel-cover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--sea);
+}
+
+.travel-cover__thumb {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.travel-cover__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-cover__title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.travel-cover__meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.hero-with-photo {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.hero-photo {
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  box-shadow: var(--shadow);
+  animation: fadeUp 0.7s var(--ease) 0.1s both;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .list-link {
   display: flex;
   justify-content: space-between;
@@ -490,8 +613,20 @@ button {
 
 @media (max-width: 800px) {
   .portal-grid,
-  .photo-grid {
+  .photo-grid,
+  .photo-row,
+  .about-layout,
+  .hero-with-photo {
     grid-template-columns: 1fr;
+  }
+
+  .travel-cover {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .travel-cover__thumb {
+    width: 96px;
+    height: 96px;
   }
 
   .nav-toggle {

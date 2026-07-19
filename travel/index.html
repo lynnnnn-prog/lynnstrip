@@ -25,7 +25,7 @@
           <a class="nav__link" href="/projects/">项目</a>
           <a class="nav__link" href="/code/">代码</a>
           <a class="nav__link is-active" href="/travel/">旅行</a>
-          <a class="nav__link" href="/photography/">摄影</a>
+          <a class="nav__link" href="/blog/">博客</a>
           <a class="nav__link" href="/contact/">联系</a>
         </nav>
       </div>
@@ -34,16 +34,24 @@
     <main class="site-main">
       <p class="eyebrow">Travel</p>
       <h1 class="page-title">旅行</h1>
-      <p class="page-lead">旅行分享与攻略列表。原先整站的马来西亚内容，现在是这里的一篇。</p>
+      <p class="page-lead">旅行分享与攻略列表。照片会跟着每篇行程一起出现。</p>
 
       <div class="stack">
-        <a class="list-link" href="/travel/malaysia/">
-          <span class="list-link__title">马来之旅 · 8 天 3 城攻略</span>
-          <span class="list-link__meta">吉隆坡 × 仙本那 × 亚庇</span>
+        <a class="travel-cover" href="/travel/malaysia/">
+          <div class="travel-cover__thumb">
+            <img src="/images/IMG_5208.JPG" alt="马来西亚旅行封面" width="1022" height="1200" loading="lazy">
+          </div>
+          <div>
+            <div class="travel-cover__title">马来之旅 · 8 天 3 城攻略</div>
+            <div class="travel-cover__meta">吉隆坡 × 仙本那 × 亚庇</div>
+          </div>
         </a>
-        <div class="list-link" aria-disabled="true" style="opacity: 0.55; cursor: default;">
-          <span class="list-link__title">下一篇旅行（占位）</span>
-          <span class="list-link__meta">Coming soon</span>
+        <div class="travel-cover" aria-disabled="true" style="opacity: 0.55; cursor: default;">
+          <div class="travel-cover__thumb" style="display:grid;place-items:center;color:var(--muted);font-size:12px;">Soon</div>
+          <div>
+            <div class="travel-cover__title">下一篇旅行（占位）</div>
+            <div class="travel-cover__meta">Coming soon</div>
+          </div>
         </div>
       </div>
 
@@ -57,7 +65,7 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>© <span data-year></span> Lynn · lynnstrip.com</p>
-        <p><a href="/photography/">摄影</a></p>
+        <p><a href="/blog/">博客</a></p>
       </div>
     </footer>
   </div>
