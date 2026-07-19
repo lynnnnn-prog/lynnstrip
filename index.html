@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lynn | 个人主页</title>
-  <meta name="description" content="Lynn 的个人主页：项目、代码、旅行与博客记录。">
+  <meta name="description" content="Lynn 的个人主页：出海 AI 增长、小工具、旅行与记录。">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,8 +16,11 @@
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="/">
-          <span class="brand__mark">Lynn</span>
-          <span class="brand__tag">lynnstrip.com</span>
+          <img class="brand__logo" src="/images/ip-cat.png" alt="Lynn IP" width="36" height="36">
+          <span class="brand__text">
+            <span class="brand__mark">Lynn</span>
+            <span class="brand__tag">lynnstrip.com</span>
+          </span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
         <nav class="nav" id="site-nav" data-nav aria-label="主导航">
@@ -36,31 +40,35 @@
         <div class="hero">
           <p class="eyebrow">Lynn's Site</p>
           <h1 class="hero__title">你好，我是 <span>Lynn</span></h1>
-          <p class="hero__text">做产品，写代码，也爱旅行和随手记录。这里是我的个人主页——项目、旅途和日常，都会慢慢放进来。</p>
+          <p class="hero__text">在出海 AI 创业公司做用户增长。文科生背景，喜欢把工作里的想法做成小工具，也在这里分享旅行和日常。</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="/travel/malaysia/">马来西亚攻略</a>
+            <a class="btn btn--primary" href="/projects/">看项目</a>
             <a class="btn btn--ghost" href="/about/">关于我</a>
+          </div>
+          <div class="ip-badge">
+            <img src="/images/ip-cat.png" alt="Lynn 猫猫 IP" width="40" height="40">
+            <span>站点 IP · <strong>猫猫</strong></span>
           </div>
         </div>
         <div class="hero-photo">
-          <img src="/images/IMG_5208.JPG" alt="仙本那旅行照片" width="1022" height="1200">
+          <img src="/images/IMG_5208.JPG" alt="旅行照片" width="1022" height="1200">
         </div>
       </section>
 
       <section aria-labelledby="portals-title">
         <h2 class="section-title" id="portals-title">逛逛这里</h2>
-        <p class="section-desc">旅行攻略已经上线；项目、博客等内容会陆续补充。</p>
+        <p class="section-desc">项目、旅行和记录，都从这里开始。</p>
         <div class="portal-grid">
           <a class="portal-card" href="/about/">
             <div class="portal-card__kicker">About</div>
             <h3 class="portal-card__title">关于我</h3>
-            <p class="portal-card__text">个人介绍与近况。</p>
+            <p class="portal-card__text">增长、经历，以及为什么想做小工具。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
           <a class="portal-card" href="/projects/">
             <div class="portal-card__kicker">Projects</div>
             <h3 class="portal-card__title">项目</h3>
-            <p class="portal-card__text">线上产品与 SaaS 入口。</p>
+            <p class="portal-card__text">sisulab：给市场人的轻量工具箱。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
           <a class="portal-card" href="/code/">
@@ -72,19 +80,19 @@
           <a class="portal-card" href="/travel/">
             <div class="portal-card__kicker">Travel</div>
             <h3 class="portal-card__title">旅行</h3>
-            <p class="portal-card__text">攻略与路上见闻，马来西亚已收录。</p>
+            <p class="portal-card__text">真实攻略，马来西亚已上线。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
           <a class="portal-card" href="/blog/">
             <div class="portal-card__kicker">Blog</div>
             <h3 class="portal-card__title">博客</h3>
-            <p class="portal-card__text">日常感想与 vlog 记录。</p>
+            <p class="portal-card__text">日常感想与 vlog，稍后更新。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
           <a class="portal-card" href="/contact/">
             <div class="portal-card__kicker">Contact</div>
             <h3 class="portal-card__title">联系</h3>
-            <p class="portal-card__text">邮箱与社交账号。</p>
+            <p class="portal-card__text">邮箱可直接写信给我。</p>
             <div class="portal-card__cta">进入 →</div>
           </a>
         </div>
@@ -94,7 +102,7 @@
     <footer class="site-footer">
       <div class="site-footer__inner">
         <p>© <span data-year></span> Lynn · lynnstrip.com</p>
-        <p><a href="/travel/malaysia/">马来西亚攻略</a> · <a href="/contact/">联系</a></p>
+        <p><a href="/travel/malaysia/">马来西亚攻略</a> · <a href="mailto:liyingw708@gmail.com">邮箱</a></p>
       </div>
     </footer>
   </div>

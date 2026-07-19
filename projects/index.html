@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>项目 | Lynn</title>
-  <meta name="description" content="Lynn 的线上项目与 SaaS 入口。">
+  <meta name="description" content="Lynn 的项目：sisulab — 市场人的轻量工具箱。">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,8 +16,11 @@
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="/">
-          <span class="brand__mark">Lynn</span>
-          <span class="brand__tag">lynnstrip.com</span>
+          <img class="brand__logo" src="/images/ip-cat.png" alt="Lynn IP" width="36" height="36">
+          <span class="brand__text">
+            <span class="brand__mark">Lynn</span>
+            <span class="brand__tag">lynnstrip.com</span>
+          </span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">菜单</button>
         <nav class="nav" id="site-nav" data-nav aria-label="主导航">
@@ -34,13 +38,14 @@
     <main class="site-main">
       <p class="eyebrow">Projects</p>
       <h1 class="page-title">项目</h1>
-      <p class="page-lead">线上产品与 SaaS 会放在这里，每个项目一句话介绍 + 外链。</p>
+      <p class="page-lead">目前在做的小产品。上线后会在这里补上访问入口。</p>
 
-      <div class="empty-state">
-        <div class="status-pill">Coming soon</div>
-        <h2 class="empty-state__title">项目列表整理中</h2>
-        <p class="empty-state__text">把你想展示的 SaaS / 产品发给我即可：名称、一句话介绍、链接、状态（进行中 / 已上线）。收到后我会做成项目卡片。</p>
-      </div>
+      <article class="project-card">
+        <div class="status-pill">初步开发中 · 即将上线</div>
+        <h2 class="project-card__title">sisulab</h2>
+        <p class="project-card__desc">市场人的轻量工具箱——面向市场团队里的个人与小团队，把常用营销工具收成一套好上手的合集，减少东拼西凑的工具切换。</p>
+        <p class="block__text" style="margin:0; color: var(--muted); font-size: 14px;">链接待上线后补充。若你也做市场增长，欢迎先通过邮箱跟我聊聊。</p>
+      </article>
     </main>
 
     <footer class="site-footer">

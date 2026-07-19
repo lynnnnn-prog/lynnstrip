@@ -93,9 +93,25 @@ button {
 
 .brand {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand__logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #d7ecf8;
+  box-shadow: 0 0 0 2px rgba(15, 107, 92, 0.12);
+}
+
+.brand__text {
+  display: flex;
   flex-direction: column;
   gap: 2px;
-  flex-shrink: 0;
 }
 
 .brand__mark {
@@ -110,6 +126,72 @@ button {
   font-size: 11px;
   color: var(--muted);
   letter-spacing: 0.08em;
+}
+
+.ip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 8px 12px 8px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+}
+
+.ip-badge img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ip-badge span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.ip-badge strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--sea);
+}
+
+.project-card__title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-card__desc {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 560px;
+  margin-bottom: 16px;
+}
+
+.contact-mail {
+  color: var(--sea);
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.contact-mail:hover {
+  color: var(--coral);
 }
 
 .nav {
