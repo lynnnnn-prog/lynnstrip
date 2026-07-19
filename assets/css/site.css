@@ -8,17 +8,17 @@
 }
 
 :root {
-  --bg: #eef4f1;
-  --bg-soft: #f7faf8;
+  --bg: #ffffff;
+  --bg-soft: #f7f7f7;
   --surface: #ffffff;
-  --ink: #14241f;
-  --muted: #5a6f67;
-  --line: #c9d9d2;
+  --ink: #1a1a1a;
+  --muted: #667085;
+  --line: #e8e8e8;
   --sea: #0f6b5c;
   --sea-deep: #0a4a3f;
   --coral: #e85d4c;
   --gold: #c9a227;
-  --shadow: 0 10px 30px rgba(10, 74, 63, 0.08);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   --radius: 16px;
   --max: 1080px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -33,22 +33,10 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: var(--bg);
+  background: #ffffff;
   color: var(--ink);
   line-height: 1.65;
   min-height: 100vh;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(15, 107, 92, 0.16), transparent 55%),
-    radial-gradient(ellipse 50% 35% at 0% 100%, rgba(232, 93, 76, 0.1), transparent 50%),
-    linear-gradient(165deg, #eef4f1 0%, #f7faf8 50%, #e7efeb 100%);
 }
 
 img {
@@ -76,9 +64,9 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
-  background: rgba(238, 244, 241, 0.82);
-  border-bottom: 1px solid rgba(201, 217, 210, 0.7);
+  border-bottom: 1px solid var(--line);
 }
 
 .site-header__inner {
@@ -104,8 +92,7 @@ button {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  background: #d7ecf8;
-  box-shadow: 0 0 0 2px rgba(15, 107, 92, 0.12);
+  background: #eef6fa;
 }
 
 .brand__text {
@@ -119,7 +106,7 @@ button {
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.04em;
-  color: var(--sea-deep);
+  color: var(--ink);
 }
 
 .brand__tag {
@@ -129,31 +116,7 @@ button {
 }
 
 .ip-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 18px;
-  padding: 8px 12px 8px 8px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--line);
-}
-
-.ip-badge img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.ip-badge span {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-.ip-badge strong {
-  color: var(--ink);
-  font-weight: 600;
+  display: none;
 }
 
 .project-card {
@@ -243,7 +206,7 @@ button {
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.45);
+  background: #ffffff;
 }
 
 .site-footer__inner {
@@ -257,6 +220,19 @@ button {
   align-items: center;
   color: var(--muted);
   font-size: 13px;
+}
+
+.site-footer__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-footer__brand img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .site-footer a {
@@ -314,6 +290,21 @@ button {
   gap: 28px;
   margin-bottom: 56px;
   animation: fadeUp 0.6s var(--ease) both;
+}
+
+/* hero without mandatory photo */
+.hero-solo {
+  max-width: 640px;
+  margin-bottom: 56px;
+  animation: fadeUp 0.6s var(--ease) both;
+}
+
+.hero-with-photo {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 56px;
 }
 
 .hero-with-photo .hero {
@@ -776,7 +767,7 @@ button {
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: rgba(247, 250, 248, 0.98);
+    background: #ffffff;
     border-bottom: 1px solid var(--line);
     padding: 12px;
     gap: 4px;
