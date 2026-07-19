@@ -409,6 +409,41 @@ button {
   color: var(--ink);
 }
 
+.empty-state {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  text-align: left;
+}
+
+.empty-state__title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.empty-state__text {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.status-pill {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sea);
+  background: rgba(15, 107, 92, 0.1);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
